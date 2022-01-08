@@ -92,7 +92,7 @@ public class TicTacToe {
 //              Check left diagonal
                 if (i == j && MAP[i][j] == symbol) {
                     leftDiagonal += 1;
-                }else if (MAP[i][j] != symbol) {
+                }else if (i == j && MAP[i][j] != symbol) {
                     leftDiagonal = 0;
                 }
 
