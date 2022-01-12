@@ -32,8 +32,7 @@ public class Dog extends Animal {
         System.out.println(this.name + " может проплыть максимум " + MAX_SWIM_LENGTH + " метров");
     }
 
-    @Override
-    public void showClassCount() {
+    public static void showClassCount() {
         System.out.println("Собак создано: " + dogsCount);
     }
 }

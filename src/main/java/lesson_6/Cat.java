@@ -26,8 +26,7 @@ public class Cat extends Animal {
         System.out.println(this.name + " не умеет плавать.");
     }
 
-    @Override
-    public void showClassCount() {
+    public static void showClassCount() {
         System.out.println("Кошек создано: " + catsCount);
     }
 }

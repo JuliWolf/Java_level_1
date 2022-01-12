@@ -23,7 +23,7 @@ public class Main {
 
         System.out.println();
 
-        cat.showClassCount();
-        dog.showClassCount();
+        Cat.showClassCount();
+        Dog.showClassCount();
     }
 }

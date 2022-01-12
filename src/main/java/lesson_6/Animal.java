@@ -20,8 +20,6 @@ public abstract class Animal {
 
     public abstract void swim (int length);
 
-    public abstract void showClassCount ();
-
     public int getAge() {
         return age;
     }
