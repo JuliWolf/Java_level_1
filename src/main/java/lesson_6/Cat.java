@@ -1,7 +1,7 @@
 package lesson_6;
 
 public class Cat extends Animal {
-    private final int MAX_RUN_LENGTH = 200;
+    private static final int MAX_RUN_LENGTH = 200;
 
     private static int catsCount;
 
@@ -13,12 +13,12 @@ public class Cat extends Animal {
 
     @Override
     public void run(int length) {
-        if (length > 0 && length <= this.MAX_RUN_LENGTH) {
+        if (length > 0 && length <= MAX_RUN_LENGTH) {
             System.out.println(this.name + " пробежал " + length + " м.");
             return;
         }
 
-        System.out.println(this.name + " может пробежать максимум " + this.MAX_RUN_LENGTH + " метров");
+        System.out.println(this.name + " может пробежать максимум " + MAX_RUN_LENGTH + " метров");
     }
 
     @Override

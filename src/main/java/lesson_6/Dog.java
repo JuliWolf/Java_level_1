@@ -1,8 +1,8 @@
 package lesson_6;
 
 public class Dog extends Animal {
-    private final int MAX_RUN_LENGTH = 500;
-    private final int MAX_SWIM_LENGTH = 10;
+    private static final int MAX_RUN_LENGTH = 500;
+    private static final int MAX_SWIM_LENGTH = 10;
 
     private static int dogsCount;
 
@@ -14,22 +14,22 @@ public class Dog extends Animal {
 
     @Override
     public void run(int length) {
-        if (length > 0 && length <= this.MAX_RUN_LENGTH) {
+        if (length > 0 && length <= MAX_RUN_LENGTH) {
             System.out.println(this.name + " пробежал " + length + " м.");
             return;
         }
 
-        System.out.println(this.name + " может пробежать максимум " + this.MAX_RUN_LENGTH + " метров");
+        System.out.println(this.name + " может пробежать максимум " + MAX_RUN_LENGTH + " метров");
     }
 
     @Override
     public void swim(int length) {
-        if (length > 0 && length <= this.MAX_SWIM_LENGTH) {
+        if (length > 0 && length <= MAX_SWIM_LENGTH) {
             System.out.println(this.name + " проплыл " + length + " м.");
             return;
         }
 
-        System.out.println(this.name + " может проплыть максимум " + this.MAX_SWIM_LENGTH + " метров");
+        System.out.println(this.name + " может проплыть максимум " + MAX_SWIM_LENGTH + " метров");
     }
 
     @Override
